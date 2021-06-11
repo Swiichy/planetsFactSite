@@ -1,0 +1,84 @@
+@import './animationNav';
+
+.nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary-transparent);
+    color: var(--primary-white);
+
+    a {
+        position: relative;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-left: 33px;
+        text-decoration: none;
+        color: var(--primary-white);
+        mix-blend-mode: normal;
+        opacity: 0.75;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__title {
+        font-family: 'Antonio', sans-serif;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -1.05px;
+        text-transform: uppercase;
+        padding: 22px 0 27px 32px;
+    }
+
+    &__list {
+        display: flex;
+        font-family: 'Spartan', sans-serif;
+        margin-right: 41px;
+        padding-top: 10px;
+    }
+
+    &__line {
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        background: var(--primary-white);
+        mix-blend-mode: normal;
+        opacity: 0.2;
+        bottom: 0;
+    }
+}
+
+.nav__list a:nth-child(1)::after {
+    @include mercury-animation;
+}
+.nav__list a:nth-child(2)::after {
+    @include venus-animation;
+}
+.nav__list a:nth-child(3)::after {
+    @include earth-animation;
+}
+.nav__list a:nth-child(4)::after {
+    @include mars-animation;
+}
+.nav__list a:nth-child(5)::after {
+    @include jupiter-animation;
+}
+.nav__list a:nth-child(6)::after {
+    @include saturn-animation;
+}
+.nav__list a:nth-child(7)::after {
+    @include uranus-animation;
+}
+.nav__list a:nth-child(8)::after {
+    @include neptune-animation;
+}
+
+.nav__list a:hover::after {
+    width: 100%;
+}

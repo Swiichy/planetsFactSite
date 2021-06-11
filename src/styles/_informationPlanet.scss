@@ -1,0 +1,95 @@
+.overview {
+    background-image: url('../components/planets/background-stars.svg');
+    background-size: cover;
+    background-position: center center;
+    background: var(--primary-transparent);
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    color: var(--primary-white);
+
+    &__img {
+        padding: 242px 300px 222px 335px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+
+        & h1 {
+            font-family: 'Antonio', sans-serif;
+            font-size: 80px;
+            line-height: 104px;
+            text-transform: uppercase;
+            padding-bottom: 23px;
+        }
+
+        & p {
+            max-width: 350px;
+            font-family: 'Spartan', sans-serif;
+            font-size: 14px;
+            line-height: 25px;
+            padding-bottom: 24px;
+        }
+
+        &-link {
+            display: flex;
+            align-items: center;
+            font-family: 'Spartan', sans-serif;
+            font-size: 14px;
+            line-height: 25px;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            padding-bottom: 39px;
+
+            & a {
+                font-family: 'Spartan', sans-serif;
+                text-decoration: underline;
+                color: var(--primary-white);
+                mix-blend-mode: normal;
+                opacity: 0.5;
+                padding: 0 0.5em;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Spartan', sans-serif;
+
+        & li {
+            width: 100%;
+            max-width: 350px;
+            border: 1px solid var(--secondary-grey);
+            margin-bottom: 16px;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 2.57143px;
+            text-transform: uppercase;
+            padding: 12px 0;
+
+            & span {
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 25px;
+                letter-spacing: 2.57143px;
+                text-transform: uppercase;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+                margin: 12px 28px 11px 28px;
+            }
+
+            &:hover {
+                background: var(--primary-grey);
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            color: var(--primary-white);
+        }
+    }
+}

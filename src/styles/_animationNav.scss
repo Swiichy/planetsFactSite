@@ -1,0 +1,80 @@
+@mixin mercury-animation {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: var(--primary-blue);
+}
+@mixin venus-animation {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: var(--primary-yellow);
+}
+@mixin earth-animation {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: var(--primary-purple);
+}
+@mixin mars-animation {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: var(--primary-orange);
+}
+@mixin jupiter-animation {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: var(--primary-red);
+}
+@mixin saturn-animation {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: var(--secondary-orange);
+}
+@mixin uranus-animation {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: var(--primary-cyan);
+}
+@mixin neptune-animation {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: var(--secondary-blue);
+}
